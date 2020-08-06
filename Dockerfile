@@ -18,10 +18,3 @@ ENV HOME /home/vimuser
 
 RUN chown -R vimuser:vimuser $HOME
 USER vimuser
-
-# setup pathogen vim plugin manager
-RUN mkdir -p $HOME/.vim/autoload $HOME/.vim/bundle && \
-    wget -P $HOME/.vim/autoload https://tpo.pe/pathogen.vim && \
-    echo "execute pathogen#infect()" >> $HOME/.vimrc && \
-    echo "syntax on"                 >> $HOME/.vimrc && \
-    echo "filetype plugin indent on" >> $HOME/.vimrc
