@@ -11,14 +11,6 @@ RUN apt-get update && \
     apt-get install -y \
       vim \
       git \
-      wget \
-      curl \
-      nodejs \
-      build-essential \
-      cmake \
-      clang \
-      python-dev \
-      python3-dev \
       ripgrep
 
 RUN useradd vimuser && \

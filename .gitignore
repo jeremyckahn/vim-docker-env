@@ -1,3 +1,6 @@
+*.swp
 .bash_history
+.bashrc
+.fzf*
+.vim
 .viminfo
-.wget-hsts
