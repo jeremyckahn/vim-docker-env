@@ -21,10 +21,6 @@ RUN apt-get update && \
       python3-dev \
       ripgrep
 
-RUN curl -sL https://deb.nodesource.com/setup_14.x | bash -
-RUN apt-get install -y nodejs
-RUN npm install -g yarn
-
 RUN useradd vimuser && \
     echo "ALL            ALL = (ALL) NOPASSWD: ALL" >> /etc/sudoers
 

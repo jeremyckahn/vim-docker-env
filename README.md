@@ -13,13 +13,13 @@ This is an educational tool to be used at [jeremyckahn](https://github.com/jerem
 On Linux and OS X:
 
 ```
-docker run -it -v "$(pwd)":/home/vimuser jeremyckahn/vimconf.live:latest
+docker run -it --rm -v "$(pwd)":/home/vimuser jeremyckahn/vimconf.live:latest
 ```
 
 On Windows (must be done in Powershell):
 
 ```
-docker run -it -v ${PWD}:/home/vimuser jeremyckahn/vimconf.live:latest
+docker run -it --rm -v ${PWD}:/home/vimuser jeremyckahn/vimconf.live:latest
 ```
 
 
