@@ -8,7 +8,6 @@ call plug#begin('~/.vim/plugged')
 
 " This is our list of plugins to install
 Plug 'mhinz/vim-startify'
-Plug 'patstockwell/vim-monokai-tasty'
 Plug 'scrooloose/nerdtree'
 Plug 'dyng/ctrlsf.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -33,9 +32,6 @@ inoremap jj <esc>
 let mapleader = "\<Space>"
 
 " Custom configuration begins
-
-" Set the color scheme
-colo vim-monokai-tasty
 
 " With this, you can enter ":command" in normal mode to open the Vim
 " configuration.
