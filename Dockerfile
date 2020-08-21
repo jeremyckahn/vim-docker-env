@@ -11,7 +11,12 @@ RUN apt-get update && \
     apt-get install -y \
       vim \
       git \
-      ripgrep
+      ripgrep \
+      software-properties-common
+
+RUN add-apt-repository ppa:lazygit-team/release && \
+    apt-get update && \
+    apt-get install -y lazygit
 
 RUN useradd vimuser && \
     echo "ALL            ALL = (ALL) NOPASSWD: ALL" >> /etc/sudoers

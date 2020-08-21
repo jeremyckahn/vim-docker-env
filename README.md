@@ -1,5 +1,7 @@
 # vim-docker-env
 
+[![Dockerhub Repo](https://img.shields.io/docker/automated/jeremyckahn/vimconf.live)](https://hub.docker.com/repository/docker/jeremyckahn/vimconf.live)
+
 ## A bare Vim environment, plus Pathogen and vim-plug, powered by Docker
 
 This is an educational tool to be used at [jeremyckahn](https://github.com/jeremyckahn)'s Vimconf.live workshop session. It should work on OS X, Windows, and Linux.

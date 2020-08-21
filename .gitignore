@@ -1,6 +1,7 @@
 *.swp
 .bash_history
 .bashrc
+.config
 .fzf*
 .vim
 .viminfo

@@ -94,3 +94,17 @@ nmap <leader>C :CtrlSFToggle<CR>
 
 " Use Ripgrep with CtrlSF for performance
 let g:ctrlsf_ackprg = '/usr/bin/rg'
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" BONUS SECTION!
+"
+" You can easily open external interactive command line tools from within Vim.
+" This isn't for everyone, but it's a convenient way to quickly open a non-Vim
+" tool that you frequently use briefly. This example opens lazygit in a Vim
+" term tab.  As soon as lazygit exits, the term tab is closed.
+"
+" https://github.com/jesseduffield/lazygit
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+noremap <leader>g :tab term ++close lazygit<CR>
