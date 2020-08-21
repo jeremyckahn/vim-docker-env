@@ -12,6 +12,7 @@ RUN apt-get update && \
       vim \
       git \
       ripgrep \
+      htop \
       software-properties-common
 
 RUN add-apt-repository ppa:lazygit-team/release && \

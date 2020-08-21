@@ -40,6 +40,10 @@ command! Config execute ":e $MYVIMRC"
 " Call ":Reload" to apply the latest .vimrc contents
 command! Reload execute "source ~/.vimrc"
 
+" Simple tab navigation with <C-h> and <C-l> to intuitively go left and right
+noremap <C-h> :tabp<CR>
+noremap <C-l> :tabn<CR>
+
 " Be kind to ourselves and enable the mouse
 if has('mouse')
   set mouse=a
@@ -101,10 +105,19 @@ let g:ctrlsf_ackprg = '/usr/bin/rg'
 "
 " You can easily open external interactive command line tools from within Vim.
 " This isn't for everyone, but it's a convenient way to quickly open a non-Vim
-" tool that you frequently use briefly. This example opens lazygit in a Vim
-" term tab.  As soon as lazygit exits, the term tab is closed.
+" tool that you frequently use briefly. These examples open htop or lazygit in
+" a Vim term tab.  As soon as the interactive tool's session exits, the term
+" tab is closed.
 "
-" https://github.com/jesseduffield/lazygit
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+" https://hisham.hm/htop/
+noremap <leader>h :tab term ++close htop<CR>
+
+" https://github.com/jesseduffield/lazygit
 noremap <leader>g :tab term ++close lazygit<CR>
+
+" term variants of the tab navigation bindings from above to make the
+" interactive command line tools easier to work with
+tmap <C-h> <C-w>:tabp<CR>
+tmap <C-l> <C-w>:tabn<CR>
