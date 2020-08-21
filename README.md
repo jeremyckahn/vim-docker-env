@@ -2,9 +2,9 @@
 
 [![Dockerhub Repo](https://img.shields.io/docker/automated/jeremyckahn/vimconf.live)](https://hub.docker.com/repository/docker/jeremyckahn/vimconf.live)
 
-## A bare Vim environment, plus Pathogen and vim-plug, powered by Docker
+## A lightweight Vim environment powered by Pathogen, vim-plug, and Docker
 
-This is an educational tool to be used at [jeremyckahn](https://github.com/jeremyckahn)'s Vimconf.live workshop session. It should work on OS X, Windows, and Linux.
+This repo is an educational tool to be used at [jeremyckahn](https://github.com/jeremyckahn)'s Vimconf.live workshop session. It should work on OS X, Windows, and Linux.
 
 ## Installation (please do this before the workshop begins!)
 
@@ -27,7 +27,7 @@ On Windows (must be done in Powershell):
 docker run -it --rm -v ${PWD}:/home/vimuser jeremyckahn/vimconf.live:latest
 ```
 
-From here you'll be in a Linux-based container environment. The dotfiles in this environment are the same as the ones in the Git repo root. Modifying a file in the container will modify the same file in the host environment (and vice-versa).
+From here you'll be in a Linux-based container environment. The home directory configuration files in this environment are the same as the ones in the Git repo root. Modifying a home directory file in the container will modify the same file in the host environment (and vice-versa).
 
 ### Step 2: Install the plugins
 
