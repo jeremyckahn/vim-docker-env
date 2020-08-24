@@ -27,6 +27,7 @@ syntax on
 filetype plugin indent on
 set t_Co=256
 set encoding=utf-8
+set number
 
 " Bind "jj" to <esc> to jump out of insert mode
 inoremap jj <esc>
@@ -46,6 +47,9 @@ command! Reload execute "source ~/.vimrc"
 noremap <C-h> :tabp<CR>
 noremap <C-l> :tabn<CR>
 
+" Close the tab with <C-j>
+noremap <C-J> :tabc<CR>
+
 " Be kind to ourselves and enable the mouse
 if has('mouse')
   set mouse=a
@@ -54,6 +58,8 @@ endif
 """
 " FZF
 """
+
+" https://github.com/junegunn/fzf.vim
 
 " Let The :Files command show all files in the repo (including dotfiles)
 let $FZF_DEFAULT_COMMAND = 'rg --files --hidden --glob "!.git/*"'
@@ -88,6 +94,8 @@ nmap <leader>n :call ToggleNERDTree()<CR>
 """
 " CtrlSF
 """
+
+" https://github.com/dyng/ctrlsf.vim
 
 " Set "<leader>s" to substitute the word under the cursor. Works great with
 " CtrlSF!
