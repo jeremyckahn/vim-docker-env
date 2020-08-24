@@ -1,9 +1,11 @@
+" https://github.com/tpope/vim-pathogen
 execute pathogen#infect()
 
 " Use Vim settings, rather then Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 
+" https://github.com/junegunn/vim-plug
 call plug#begin('~/.vim/plugged')
 
 " This is our list of plugins to install
@@ -92,7 +94,8 @@ nmap <leader>n :call ToggleNERDTree()<CR>
 nmap <leader>s :%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>
 
 " Set up some handy CtrlSF bindings
-nmap <leader>a <Plug>CtrlSFCwordPath -W<CR>
+nmap <leader>a :CtrlSF -R ""<Left>
+nmap <leader>A <Plug>CtrlSFCwordPath -W<CR>
 nmap <leader>c :CtrlSFFocus<CR>
 nmap <leader>C :CtrlSFToggle<CR>
 
