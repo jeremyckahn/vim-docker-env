@@ -35,7 +35,7 @@ let mapleader = "\<Space>"
 
 " Custom configuration begins
 
-" With this, you can enter ":command" in normal mode to open the Vim
+" With this, you can enter ":Config" in normal mode to open the Vim
 " configuration.
 command! Config execute ":e $MYVIMRC"
 
